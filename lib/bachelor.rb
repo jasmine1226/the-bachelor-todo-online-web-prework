@@ -40,7 +40,11 @@ def get_occupation(data, hometown)
   occupation = ""
   data.each do |season, contestants|
     contestants.each do |contestant|
-      puts contestant["hometown"]
+      if occupation != ""
+        break
+      elsif contestant["hometown"] == hometown
+        occupation = contestant["occupation"]
+      end
     end
   end
   occupation
