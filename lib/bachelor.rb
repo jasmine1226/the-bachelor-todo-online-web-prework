@@ -41,6 +41,7 @@ def get_occupation(data, hometown)
   data.each do |season, contestants|
     contestants.each do |contestant|
       puts contestant["hometown"]
+    end
   end
   occupation
 end
