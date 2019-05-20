@@ -44,6 +44,7 @@ def get_occupation(data, hometown)
         occupation = contestant.fetch("occupation")
       end
     end
+  end
   occupation
 end
 
